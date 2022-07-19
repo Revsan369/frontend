@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        td{
+            border: 1px solid gray;
+            font-size: 1.1em;
+        }
+        table{
+            width: 400px;
+        }
+        tr:nth-child(1) > td{
+            background-color: bisque;
+            width: 100px;
+        }
+        table:nth-child(3) td {
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="2">5</td>
+            <td rowspan="2">6</td>   
+        </tr>
+        <tr>
+            <td>7</td>
+            <td colspan="2">8</td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="2">5</td>
+            <td rowspan="2">6</td>   
+        </tr>
+        <tr>
+            <td>7</td>
+            <td colspan="2">8</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
