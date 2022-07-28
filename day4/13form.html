@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>13member.js</title>
+    <link rel="stylesheet" href="13member.css">
+</head>
+<body>
+    <div style="width: 70%"; margin: auto;>
+        
+        <h3>register</h3>
+    <!-- input form -->
+    <form action="">
+        
+        <table style="width: 100%;">
+            
+            <tr>
+                <td> <label for="lblname" class="title mpt">name</label > </td>
+                <td><input type="text" name="name" id="lblname"></td>
+            </tr>
+            <tr>
+                <td> <label for="lblpw"class="title mpt">PW</label> </td>
+                <td><input type="password" name="PW" minlength="4" id="lblpw"></td>
+            </tr>
+            <tr>
+                <td> <label for="lblemail"class="title mpt">email</label> </td>
+                <td><input type="email" name="email" id="lblemail"></td>
+            </tr>
+            <tr>
+                <td> <label for="lblage"class="title mpt">age</label> </td>
+                <td><input type="number" name="age" id="lblage" value="18" min="18" max="99"></td>
+            </tr>
+            <tr>
+                <td>address</td>
+                <td>
+                    <select name="addr">
+                        <option value="seoul">seoul</option>
+                        <option value="incheon">incheon</option>
+                        <option value="daejeon">daejeon</option>
+                        <option value="gwangju">gwangju</option>
+                        <option value="busan" selected="selected">busan </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="" class="title">gender</label></td>
+                <td>gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male" id="lblmale">
+                    <label for="lblmale" class="mpt">male</label> 
+                    <input type="radio" name="gender" value="female" id="lblfemale">
+                    <label for="lblfemale" class="mpt">female</label> 
+                    <input type="radio" name="gender" value="unknown" id="lblunknown">
+                    <label for="lblunknown" class="mpt">unknown</label> 
+                </td>
+            </tr>
+            <tr>
+                <td>hobby</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="soccer" id="lblsc"> 
+                    <label for="lblsc" class="mpt">soccer</label>
+                    <input type="checkbox" name="hobby" value="basket ball" id="lblbb"> 
+                    <label for="lblbb" class="mpt">basketball</label>
+                    <input type="checkbox" name="hobby" value="running" id="lblrun"> 
+                    <label for="lblrun" class="mpt">running</label>
+                    <input type="checkbox" name="hobby" value="swimming" id="lblsw"> 
+                    <label for="lblsw" class="mpt">swimming</label>
+                    <input type="checkbox" name="hobby" value="boxing" id="lblbox"> 
+                    <label for="lblbox" class="mpt">boxing</label>
+                    <input type="checkbox" name="hobby" value="MMA" checked="checked" id="lblmma">
+                    <label for="lblmma" class="mpt"> MMA </label>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+
+                    <button>register</button>
+                    <button type="reset">reset</button>
+                </td>
+                <!-- <td>
+                <input type="button" value="button">
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </td> -->
+            
+            </tr>
+        </table>
+    </form>
+    </div>
+    <!-- saved as query string >>> key : value -->
+    <!-- http://192.168.45.15:5500/day3/13form.html?name=vol&PW=vol333&email=nol%40gmail.com&age=12 -->
+</body>
+</html>
