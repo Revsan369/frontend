@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        table {
+            width: 80%;
+        }
+        td {
+            border: 1px solid tomato;
+            width: 10%;
+            padding: 7px 12px;
+            text-align: center;
+        }
+        th {
+            width: 13%;
+            background-color: tomato;
+            color: white;
+            padding: 7px 12px;
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+        <tr id="time">
+
+        </tr>
+
+        <tr id="todo">
+
+        </tr>
+    </table>
+    <script>
+        const time = ['09:00','11:00','12:30','14:00','16:45']
+        const todo = ['수업','과제','점심','주간회의','자료조사']
+
+        let _time = function(value){
+            _time += '<td>'${value} '</td>'
+        }
+
+        time.forEach(ftime)
+        document.getElementById('time').innerHTML=_time
+
+        let todo = '<th>TODO</th>'
+        todo.forEach((value) => _todo += '<td>${value}</td>'); 
+        document.getElementById('todo').innerHTML=_todo
+    </script>
+    
+    }
+    <!-- //callback 함수 : 자바스크립트에서 많이 사용합니다.
+    함수 또는 메소드 안의 매개변수가 함수인 경우
+    그 매개변수로 쓰인함수가 콜백함수입니다. -->
+
+    <button id="btn1" onclick="location.href='https://www.naver.com">click[1]</button><br>
+    <button id="btn2">click[2]</button> <br>
+    <button id="btn3">click[3]</button> <br>
+    <button id="btn4">click[4]</button> <br>
+
+    <script>
+const func_interval = setInterval(func_btn4,1000)
+func_interval()
+
+const func_btn2 = function(){
+            document.getElementById('now').innerHTML = new Date();
+}
+
+            document.getElementById('btn4').addEventListener('click',() => 
+            {
+                clearInterval(func_interval)
+            })
+
+            let state = true
+            const func_btn5 = function(){
+                if (state){
+                    alert('stop timer')
+                    state=false
+                    clearInterval(func_interval)
+                }
+                else{
+                    alert('start timer')
+                    state=true
+                    func_interval;
+                }
+            }
+            document.getElementById('btn5').addEventListener('click',func_btn5)
+    </script>
+</body>
+</html>

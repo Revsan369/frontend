@@ -1,0 +1,66 @@
+/* css file  
+link this file to html*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+*{
+    font-family: 'Gamja Flower', cursive;
+    font-size: medium;
+}
+table{
+    width: 500px;
+    margin: auto;
+    border: 3px solid gray;
+    border-bottom: 3px solid gray;
+}
+td{
+    padding: 10px;
+    background-color: antiquewhite;
+}
+/* lable can be ommitted only class cuz it has only one title */
+
+label.title{ 
+    background-color: #c69;
+    color: wheat;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    display: inline-block;
+    padding: 10px;
+}
+
+button{
+    padding: 7px 15px;
+    margin: 7px;
+    background-color: rgb(194,14,104);
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* pseudo class*/
+button :hover{
+    background-color: maroon;
+}
+label.mpt{
+    cursor: pointer;
+}
+tr > td:nth-child(1) {
+    background-color: coral;
+    color: white;
+    opacity: 50%;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+tr:last-child td {
+    background-color: white;
+}
+input[type=text],input[type=password],input[type=email] {
+    width: 60%;
+}
+input,select{
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsday4</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>TIME</th> <th>TODO</th>
+        </tr>
+
+        <tbody id="contents"></tbody>
+       
+    </table>
+    <button id="add">일정추가하기</button>
+<script>
+    const schedule = [{time:'09:00',todo:'수업'},
+                          {time:'11:00',todo:'과제'},
+                          {time:'12:30',todo:'점심식사'},
+                          {time:'14:00',todo:'주간회의'},
+                          {time:'16:45',todo:'자료조사'}]
+
+
+const set_contents = function() {
+    let result = ' '
+    schedule.forEach(function(value){
+        result += `<tr><td>${value.time}</td>
+                    <td>${value.todo}</td></tr>`
+    })
+
+    document.getElementById('contents').innerHTML=result
+
+    document.getElementById('add').addEventListener('click',add_schedule)
+    function add_schedule(){
+        let atime = prompt('time')
+        let atodo = prompt('todo')
+
+        schedule.push({time:atime,todo:atodo})
+        const newtr = document.createElement('tr')
+        const newtd = `<td>${atime} </td>`
+        new_tr += `<tr><td>${atime.time}</td>
+                    <td>${atodo.todo}</td></tr>`
+    document.getElementById('contents').appendChild(result)
+
+    schedule.sort(function(a, b){ // 오름차순 정렬
+                if(a.time < b.time) {
+                    return -1;
+                } else {
+                    return 1;
+                }
+            })
+
+}
+                        </script>
+
+</body>
+</html>
